@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html xml:lang="en" lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Shopping At Random 2</title>
+        <meta
+            name="description"
+            content="The perfect place for your random shopping needs."
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- link to the CSS style sheet -->
+        <link rel="stylesheet" href="../../src/css/style.css" />
+        <!-- including jquery -->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <!-- including FontAwesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+            integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+            crossorigin="anonymous"
+        />
+    </head>
+
+    <body>
+        <!-- ANCHOR HEADER -->
+        <div id="header">
+            <ul class="nav-list">
+                <li class="header-left">
+                    <a class="header-btn header-logo" href="/"
+                        >Shopping At Random 2</a
+                    >
+                </li>
+                <li class="header-right">
+                    <a id="header-btn-user" class="header-btn" href="../pages/login.html"
+                        ><i class="fas fa-user-alt" style="font-size: 24px"></i
+                    ></a>
+                </li>
+                <li class="header-right">
+                    <a class="header-btn" href="../pages/cart.html"
+                        ><i
+                            class="fas fa-shopping-cart"
+                            style="font-size: 24px"
+                        ></i
+                    ></a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- ANCHOR PAGE CONTENTS -->
+        <div class="wrapper">
+
+            <div class="content">
+                <section class="shipments">
+                    <div id="itemsSummary">
+                        <h4 class="order-details">Your order</h4>
+
+                        <!-- Place order button -->
+                        <button
+                            name="ContinueButton"
+                            type="submit"
+                            class="continue"
+                        >
+                            Place Order
+                        </button>
+
+                        <!-- Shipping info -->
+                        <div class="shipment pickup">
+                            <div class="details">
+                                <div class="status">
+                                    <strong class="pickup"
+                                        >{Your destination} + $15</strong
+                                    >
+                                </div>
+                            </div>
+
+                            <!-- item list -->
+                            <table>
+                                <tbody id="item-list">
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+                <div id="checkout-summary">
+                    <div class="sidebar-details">
+                        <div id="trolleyTotals">
+                            <table class="table trolleySubtotal">
+                                <tbody id="checkout-totals">
+                                    <tr class="subtotal-items">
+                                        <td style="text-align: left">
+                                            Items (3)
+                                        </td>
+                                        <td>$56.5</td>
+                                    </tr>
+
+                                    <tr class="total">
+                                        <td style="text-align: left">TOTAL</td>
+                                        <td>
+                                            <span> NZ$56.5 </span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="keep-shopping fas">
+                        <a href="../pages/cart.html"
+                            ><span class="icon-trolley-left"></span> Return to
+                            cart</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ANCHOR FOOTER -->
+        <div id="footer">
+            <h2><a href="/">Shopping At Random 2</a></h2>
+            <div class="footer-list">
+                <ul class="link-list"></ul>
+            </div>
+        </div>
+
+        <script src="../src/js/index.js" async defer></script>
+        <script src="../src/js/checkout.js" async defer></script>
+    </body>
+</html>

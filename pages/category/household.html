@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html xml:lang="en" lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Shopping At Random 2</title>
+        <meta
+            name="description"
+            content="The perfect place for your random shopping needs."
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- link to the CSS style sheet -->
+        <link rel="stylesheet" href="../../src/css/style.css" />
+        <!-- including jquery -->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <!-- including FontAwesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+            integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+            crossorigin="anonymous"
+        />
+    </head>
+
+    <body>
+        <!-- ANCHOR HEADER -->
+        <div id="header">
+            <!-- list of header elements -->
+            <ul class="nav-list">
+                <!-- header title -->
+                <li class="header-left">
+                    <a class="header-btn header-logo" href="/"
+                        >Shopping At Random 2</a
+                    >
+                </li>
+                <!-- header login/signup link -->
+                <li class="header-right">
+                    <a
+                        id="header-btn-user"
+                        class="header-btn"
+                        href="../../pages/login.html"
+                        ><i class="fas fa-user-alt" style="font-size: 24px"></i
+                    ></a>
+                </li>
+                <!-- header cart link -->
+                <li class="header-right">
+                    <a class="header-btn" href="../../pages/cart.html"
+                        ><i
+                            class="fas fa-shopping-cart"
+                            style="font-size: 24px"
+                        ></i
+                    ></a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- ANCHOR PAGE CONTENTS -->
+        <div class="wrapper">
+            <!-- ANCHOR BREADCRUMBS -->
+            <div id="breadcrumbs">
+                <a class="crumb" href="/">Home</a>
+
+                /
+                <a class="crumb" href="../../pages/category.html">Category</a>
+
+                / Household
+            </div>
+            <!-- ANCHOR SEARCH BAR -->
+            <div id="searchbar">
+                <form
+                    id="form-searchbar"
+                    class="searchbar-form"
+                    action="/search"
+                    method="get"
+                >
+                    <input
+                        type="text"
+                        placeholder="I'm shopping for..."
+                        maxlength="50"
+                        autocomplete="off"
+                        value=""
+                        name="SearchText"
+                        class="search-key"
+                        id="search-key"
+                    /><input
+                        class="search-submit"
+                        type="submit"
+                        value="Search..."
+                    />
+                </form>
+            </div>
+            <!-- ANCHOR FILTERS -->
+            <div class="category-page-filters">
+                <div class="summary">
+                    <span class="results-label">Results</span>
+                </div>
+
+                <div class="sort-and-toggle">
+                    <form method="get" class="sort-form">
+                        <div class="sort">
+                            <div>
+                                <span class="drop-label">
+                                    Sort:
+                                    <span class="sort-container">
+                                        <span class="drop-arrow"></span>
+                                    </span>
+                                </span>
+                                <select name="sort">
+                                    <option value="8">Relevance</option>
+                                    <option value="1" selected="">
+                                        Popularity
+                                    </option>
+                                    <option value="2">Title</option>
+                                    <option value="4">Lowest price</option>
+                                    <option value="5">Highest price</option>
+                                    <option value="6">Newest first</option>
+                                    <option value="7">Oldest first</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- ANCHOR ELECTRONICS -->
+            <div id="content" class="content">
+                <h2 class="category-title">Household</h2>
+            </div>
+        </div>
+
+        <!-- ANCHOR FOOTER -->
+        <div id="footer">
+            <h2><a href="/">Shopping At Random 2</a></h2>
+            <div class="footer-list">
+                <ul class="link-list"></ul>
+            </div>
+        </div>
+
+        <script src="../../src/js/index.js" async defer></script>
+        <script src="../../src/js/catergory2.js" async defer></script>
+    </body>
+</html>
