@@ -34,7 +34,7 @@ categories.forEach(category => { // For every page
         <div>
             <a
                 class="category-title"
-                href="/pages/category/${category}.html"
+                href="/pages/category/${category.toLowerCase()}.html"
                 >${category}</a
             >
             <ul class="categories-products">

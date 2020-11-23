@@ -15,7 +15,7 @@ let accounts = localStorage.getItem('accounts') !== null ? localStorageAccounts 
 
 if (accounts.loggedIn !== '') { // If a user is logged in
     headerUserBtn.innerHTML = `${accounts.loggedIn}`; // Set user btn to users username
-    headerUserBtn.href = "../pages/account.html"; // Change user btn's href to point to the user page
+    headerUserBtn.href = "/pages/account.html"; // Change user btn's href to point to the user page
 } else {
     header.firstElementChild.lastElementChild.outerHTML = '';
 }
