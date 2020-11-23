@@ -44,7 +44,7 @@ categories.forEach(category => { // For each category
     // Add a link to category in the link list
     links += `
     <li class="footer-link">
-        <a class="link-text" href="../../../../pages/category/${category}.html">${category}</a>
+        <a class="link-text" href="../../../../pages/category/${category.toLowerCase()}.html">${category}</a>
     </li>`;
 });
 
