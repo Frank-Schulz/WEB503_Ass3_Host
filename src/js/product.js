@@ -15,7 +15,7 @@ productContent.innerHTML = `
         <a class="crumb" href="/pages/category.html">Category</a>
 
         /
-        <a class="crumb" href="/pages/category/${productPage.tags[0]}.html">${productPage.tags[0]}</a>
+        <a class="crumb" href="/pages/category/${productPage.tags[0].toLowerCase()}.html">${productPage.tags[0]}</a>
 
         / ${productPage.name}
     </div>
